@@ -59,6 +59,7 @@ namespace Guia3_Tarea3NSB
             this.buscar2.TabIndex = 18;
             this.buscar2.Text = "Buscar";
             this.buscar2.UseVisualStyleBackColor = true;
+            this.buscar2.Click += new System.EventHandler(this.buscar2_Click);
             // 
             // textedad2
             // 

@@ -116,6 +116,7 @@ namespace Guia3_Tarea3NSB
             this.buscar1.TabIndex = 8;
             this.buscar1.Text = "Buscar";
             this.buscar1.UseVisualStyleBackColor = true;
+            this.buscar1.Click += new System.EventHandler(this.buscar1_Click);
             // 
             // modificar1
             // 
@@ -126,6 +127,7 @@ namespace Guia3_Tarea3NSB
             this.modificar1.Text = "Modificar";
             this.modificar1.UseVisualStyleBackColor = true;
             this.modificar1.Visible = false;
+            this.modificar1.Click += new System.EventHandler(this.modificar1_Click);
             // 
             // Form1
             // 
