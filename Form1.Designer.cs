@@ -37,6 +37,8 @@ namespace Guia3_Tarea3NSB
             this.textnom1 = new System.Windows.Forms.TextBox();
             this.textape1 = new System.Windows.Forms.TextBox();
             this.textedad1 = new System.Windows.Forms.TextBox();
+            this.buscar1 = new System.Windows.Forms.Button();
+            this.modificar1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -106,11 +108,32 @@ namespace Guia3_Tarea3NSB
             this.textedad1.TabIndex = 7;
             this.textedad1.Visible = false;
             // 
+            // buscar1
+            // 
+            this.buscar1.Location = new System.Drawing.Point(206, 24);
+            this.buscar1.Name = "buscar1";
+            this.buscar1.Size = new System.Drawing.Size(52, 26);
+            this.buscar1.TabIndex = 8;
+            this.buscar1.Text = "Buscar";
+            this.buscar1.UseVisualStyleBackColor = true;
+            // 
+            // modificar1
+            // 
+            this.modificar1.Location = new System.Drawing.Point(27, 216);
+            this.modificar1.Name = "modificar1";
+            this.modificar1.Size = new System.Drawing.Size(72, 26);
+            this.modificar1.TabIndex = 9;
+            this.modificar1.Text = "Modificar";
+            this.modificar1.UseVisualStyleBackColor = true;
+            this.modificar1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 254);
+            this.ClientSize = new System.Drawing.Size(279, 254);
+            this.Controls.Add(this.modificar1);
+            this.Controls.Add(this.buscar1);
             this.Controls.Add(this.textedad1);
             this.Controls.Add(this.textape1);
             this.Controls.Add(this.textnom1);
@@ -136,6 +159,8 @@ namespace Guia3_Tarea3NSB
         private System.Windows.Forms.TextBox textnom1;
         private System.Windows.Forms.TextBox textape1;
         private System.Windows.Forms.TextBox textedad1;
+        private System.Windows.Forms.Button buscar1;
+        private System.Windows.Forms.Button modificar1;
     }
 }
 
