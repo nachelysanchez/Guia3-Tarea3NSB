@@ -49,6 +49,7 @@ namespace Guia3_Tarea3NSB
             this.insertar2.TabIndex = 19;
             this.insertar2.Text = "Insertar";
             this.insertar2.UseVisualStyleBackColor = true;
+            this.insertar2.Click += new System.EventHandler(this.insertar2_Click);
             // 
             // buscar2
             // 
