@@ -39,6 +39,7 @@ namespace Guia3_Tarea3NSB
             this.textedad1 = new System.Windows.Forms.TextBox();
             this.buscar1 = new System.Windows.Forms.Button();
             this.modificar1 = new System.Windows.Forms.Button();
+            this.eliminar1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -129,11 +130,23 @@ namespace Guia3_Tarea3NSB
             this.modificar1.Visible = false;
             this.modificar1.Click += new System.EventHandler(this.modificar1_Click);
             // 
+            // eliminar1
+            // 
+            this.eliminar1.Location = new System.Drawing.Point(150, 216);
+            this.eliminar1.Name = "eliminar1";
+            this.eliminar1.Size = new System.Drawing.Size(72, 26);
+            this.eliminar1.TabIndex = 10;
+            this.eliminar1.Text = "Eliminar";
+            this.eliminar1.UseVisualStyleBackColor = true;
+            this.eliminar1.Visible = false;
+            this.eliminar1.Click += new System.EventHandler(this.eliminar1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(279, 254);
+            this.Controls.Add(this.eliminar1);
             this.Controls.Add(this.modificar1);
             this.Controls.Add(this.buscar1);
             this.Controls.Add(this.textedad1);
@@ -163,6 +176,7 @@ namespace Guia3_Tarea3NSB
         private System.Windows.Forms.TextBox textedad1;
         private System.Windows.Forms.Button buscar1;
         private System.Windows.Forms.Button modificar1;
+        private System.Windows.Forms.Button eliminar1;
     }
 }
 

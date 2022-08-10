@@ -22,8 +22,8 @@ namespace Guia3_Tarea3NSB
         public Form1()
         {
             InitializeComponent();
-
-            cnn.ConnectionString = @"PROVIDER = SQLOLEDB; Server = DESKTOP-K8OJCDL\SQLEXPRESS; Initial Catalog = ProyectoDb; Integrated Security = True";
+            //Cambiar por CS que normalmente uso
+            cnn.ConnectionString = @"PROVIDER = SQLOLEDB; Data Source = DESKTOP-K8OJCDL\SQLEXPRESS; Initial Catalog = DB_Sucarnet; Integrated Security=SSPI;";
 
             modificar1.Visible = false;
 
@@ -43,6 +43,7 @@ namespace Guia3_Tarea3NSB
             textnom1.Visible = true;
             textape1.Visible = true;
             modificar1.Visible = true;
+            eliminar1.Visible = true;
 
             string seleccion;
 
@@ -102,6 +103,19 @@ namespace Guia3_Tarea3NSB
             form2.Show();
 
             this.Hide();
+        }
+
+        private void eliminar1_Click(object sender, EventArgs e)
+        {
+            string actualizar;
+            actualizar = "DELETE FROM Participantes WHERE Codigo = " + textcod1.Text + ""; 
+            cnn.Open();
+            OleDbCommand datos = new OleDbCommand(actualizar, cnn);
+
+            datos.ExecuteNonQuery();
+            cnn.Close();
+            MessageBox.Show("ELIMINADO");
+            Reset();
         }
     }
 }
